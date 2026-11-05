@@ -1,0 +1,17 @@
+[project]
+name = "gforester"
+version = "0.1.0"
+description = "Manage Git worktrees from the command line."
+readme = "README.md"
+authors = [
+    { name = "Kurgan5kiy", email = "kurganskiyvladislav@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+gforester = "gforester:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
