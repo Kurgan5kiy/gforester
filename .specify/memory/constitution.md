@@ -139,8 +139,15 @@ differences MUST be isolated behind explicit contracts and verified by tests.
 - Every independently deliverable change MUST have a GitHub issue before its
   implementation branch is created. Spec Kit task-list entries remain internal
   steps unless they require an independent deliverable and pull request.
+- Issue checklists MUST be updated when their items become verifiably complete.
+  Incomplete or unverified work MUST NOT be marked complete merely because it is
+  planned or in progress.
 - Feature branches MUST use `feature/<issue-number>-<kebab-description>` and fix
   branches MUST use `fix/<issue-number>-<kebab-description>`.
+- An implementation branch MUST be published to the remote repository and linked
+  to its GitHub issue through the hosting service's development relationship when
+  work begins. The issue status, linked branch, and checklist MUST reflect the
+  current state of the work.
 - Pulls MUST rebase. Pull requests MUST merge by squash. Merge commits and rebase
   merges into `main` are prohibited.
 - Commit messages MUST start with a capital letter, contain one to three
@@ -184,4 +191,4 @@ Every specification and pull-request review MUST include a constitution
 compliance check. Any justified exception MUST be documented in the relevant
 plan and approved by the maintainer before implementation.
 
-**Version**: 1.0.0 | **Ratified**: 2026-11-17 | **Last Amended**: 2026-11-18
+**Version**: 1.1.0 | **Ratified**: 2026-11-17 | **Last Amended**: 2026-11-18
