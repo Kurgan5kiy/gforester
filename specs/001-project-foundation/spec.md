@@ -9,6 +9,14 @@
 **Input**: User description: "Prepare the gforester repository for specification-driven
 development before implementing worktree operations."
 
+## Clarifications
+
+### Session 2026-11-18
+
+- Q: Must pull requests require approval from another person while the project has
+  only one maintainer? → A: No. Passing required checks and maintainer merge
+  authority are sufficient; no separate human approval is required.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Follow a Governed Development Process (Priority: P1)
@@ -145,16 +153,19 @@ task that enters the roadmap and progresses through the defined statuses.
   delete merged source branches.
 - **FR-012**: Required quality checks MUST prevent a pull request from being
   considered merge-ready when any required result fails or is missing.
-- **FR-013**: Every implementation issue and pull request MUST reference the
+- **FR-013**: While the project has one maintainer, pull requests MUST NOT require
+  approval from another person. The maintainer MAY merge only after all required
+  checks pass.
+- **FR-014**: Every implementation issue and pull request MUST reference the
   applicable approved specification artifacts.
-- **FR-014**: The foundation MUST NOT implement Git worktree operations,
+- **FR-015**: The foundation MUST NOT implement Git worktree operations,
   interactive product flows, full-screen product screens, package-index
   publication, or documentation-site deployment.
-- **FR-015**: Private local planning notes MUST remain untracked and MUST NOT be
+- **FR-016**: Private local planning notes MUST remain untracked and MUST NOT be
   presented as project documentation or specification history.
-- **FR-016**: Every implementation branch MUST be published to the remote
+- **FR-017**: Every implementation branch MUST be published to the remote
   repository and linked to its GitHub issue through development tracking.
-- **FR-017**: Issue checklists MUST be updated as work becomes verifiably complete
+- **FR-018**: Issue checklists MUST be updated as work becomes verifiably complete
   and MUST NOT mark planned, partial, or unverified work as complete.
 
 ### Key Entities
